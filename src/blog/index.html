@@ -22,8 +22,8 @@ layout: blog
                 </time>
             </p>
             {% if post.data.description %}
-            <img class="w-10 h-10 rounded-full mr-4" src="{{ post.data.image }}" alt="accompanying image">
-                <p class="text-lg text-gray-500 mb-3">
+            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('{{ post.data.image }}')" title="Woman holding a mug">
+            <p class="text-lg text-gray-500 mb-3">
                     {{ post.data.description }}
                 </p>
             {% endif %}
