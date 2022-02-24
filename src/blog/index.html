@@ -19,15 +19,12 @@ layout: blog
             <p class="text-base leading-6 text-gray-500 mb-3">
                 <time>
                     {{ post.date | readableDate }}
-                    by
-                    <a>{{ post.data.author }}</a>
-
                 </time>
             </p>
             {% if post.data.description %}
-            <img src="{{ post.data.image }}" width="50px">
                 <p class="text-lg text-gray-500 mb-3">
                     {{ post.data.description }}
+                    <img class="object-contain h-48 w-96" src="{{ post.data.image }}">
                 </p>
             {% endif %}
 
