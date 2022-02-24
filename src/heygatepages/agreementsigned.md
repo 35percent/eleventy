@@ -1,6 +1,5 @@
 ---
 title: Sold for a pittance
-layout: heygatepages
 image: img/pjdl.jpg
 ---
 

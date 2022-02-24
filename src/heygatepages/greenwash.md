@@ -1,5 +1,4 @@
 ---
-layout: heygatepages
 title: "Lendlease Greenwash"
 image: img/elephantparkmarketing.jpg
 ---
