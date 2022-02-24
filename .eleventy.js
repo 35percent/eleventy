@@ -9,6 +9,14 @@ module.exports = function (eleventyConfig) {
 
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
+ 
+  // Create excerpts from first pargraph
+  eleventyConfig.setFrontMatterParsingOptions({
+  excerpt: true,
+
+  // Optional, default is "---"
+  excerpt_separator: "<!-- excerpt -->"
+  });
 
   // human readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
