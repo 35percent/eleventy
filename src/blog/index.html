@@ -24,9 +24,10 @@ layout: blog
 
                 </time>
             </p>
-            {% if page.excerpt %}
+            {% if post.data.description %}
+            <img src="{{ post.data.image }}" width="50px">
                 <p class="text-lg text-gray-500 mb-3">
-                    {{ page.excerpt }}
+                    {{ post.data.description }}
                 </p>
             {% endif %}
 
