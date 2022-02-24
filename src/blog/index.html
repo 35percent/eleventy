@@ -22,9 +22,9 @@ layout: blog
                 </time>
             </p>
             {% if post.data.description %}
+            <img class="w-10 h-10 rounded-full mr-4" src="{{ post.data.image }}" alt="accompanying image">
                 <p class="text-lg text-gray-500 mb-3">
                     {{ post.data.description }}
-                    <img class="object-contain h-48 w-96" src="{{ post.data.image }}" style="float: right">
                 </p>
             {% endif %}
 
