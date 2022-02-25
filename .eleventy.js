@@ -7,6 +7,9 @@ module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 
+  // Copies static files to output.
+  eleventyConfig.addPassthroughCopy('img');
+
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
 
